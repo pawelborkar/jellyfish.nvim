@@ -42,6 +42,7 @@ M.palette = {
   special    = "#fa71ff",
   highlight  = "#fdff82",
   call       = "#20dd20",
+  selection  = "#5d004d",
 }
 
 function M.setup()
@@ -62,7 +63,7 @@ function M.setup()
   hl(0, "LineNr",          { fg = "#868686" })
   hl(0, "SignColumn",      { bg = c.bg_deep })
   hl(0, "ColorColumn",     { bg = c.bg_dark })
-  hl(0, "Visual",          { bg = "#ff00885d" })
+  hl(0, "Visual",          { bg = c.selection })
   hl(0, "Search",          { fg = c.bg_deep,   bg = c.yellow })
   hl(0, "IncSearch",       { fg = c.bg_deep,   bg = c.cyan })
   hl(0, "StatusLine",      { fg = c.fg_muted,  bg = c.bg_dark })
